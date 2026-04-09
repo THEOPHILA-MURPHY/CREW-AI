@@ -1,5 +1,4 @@
 crewai
-crewai-tools
 langchain-groq
 fastapi
 pydantic
