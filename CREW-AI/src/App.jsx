@@ -16,7 +16,8 @@ function App() {
     setResult(null)
 
     try {
-      const response = await fetch('/api/generate', {
+      const apiUrl = import.meta.env.VITE_API_URL || '';
+      const response = await fetch(`${apiUrl}/api/generate`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
